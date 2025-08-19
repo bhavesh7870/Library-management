@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background & Font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #eef2f3;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar Filters */
+aside {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+aside h2 {
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+aside h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #00509E;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+aside label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Main Content Area */
+main#content-area {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Book Cards */
+.content-box {
+    width: 200px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+.footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#admin-link {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+#admin-link:hover {
+    text-decoration: underline;
+}
