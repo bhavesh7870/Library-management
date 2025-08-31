@@ -110,7 +110,7 @@ button[type="submit"]:hover {
 <body>
     <h1>Admin Dashboard</h1>
     
-    <!-- 🔹 Logout Button वापस Add कर दिया -->
+
     <a href="logout.php">Logout</a>
     
     <form action="upload.php" method="post" enctype="multipart/form-data">
@@ -157,6 +157,5 @@ button[type="submit"]:hover {
         document.getElementById("file-upload-area").appendChild(div);
     }
     </script>
-
 </body>
 </html>
