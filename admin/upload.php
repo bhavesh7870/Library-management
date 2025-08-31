@@ -14,14 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $book_names = $_POST['book_name'];
     $files = $_FILES['file'];
 
-    // 🔹 Loop through all uploaded files
     for ($i = 0; $i < count($files['name']); $i++) {
         if ($files['error'][$i] === 0) {
             $file_name = time() . "_" . basename($files["name"][$i]);
             $file_path = "../uploads/" . $file_name;
 
             if (move_uploaded_file($files["tmp_name"][$i], $file_path)) {
-                // 🔹 Save file details in Database
+                //  Save file details in Database
                 $sql = "INSERT INTO content (department, semester, content_type, book_name, file_path) 
                         VALUES ('$department', '$semester', '$content_type', '".$book_names[$i]."', '$file_name')";
 
