@@ -106,11 +106,11 @@ main#content-area {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 👇 Yeh hatao */
+    
     /* justify-content: space-between; */
   /* Height ko auto karo */
-    min-height: unset; /* 👈 Yeh auto ki jagah use karo */
-    max-height: 300px; /* 👈 Yeh add karo taaki height limit ho */
+    min-height: unset;  
+    max-height: 300px; 
 }
 
 /* Ensure all content is aligned properly */
@@ -128,7 +128,7 @@ main#content-area {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
-    margin-top: auto; /* Yeh add karo */
+    margin-top: auto; 
 }
 
 /* Footer */
@@ -184,7 +184,7 @@ main#content-area {
         </aside>
 
         <main id="content-area">
-            <?php include 'search.php'; ?> <!-- Filtered books show honge -->
+            <?php include 'search.php'; ?> 
         </main>
     </div>
 
