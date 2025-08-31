@@ -1,4 +1,4 @@
-/* बॉडी और HTML को पूरी ऊँचाई पर सेट करें */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -7,27 +7,24 @@ html, body {
     flex-direction: column;
 }
 
-/* कंटेनर को फ्लेक्सिबल बनाएँ ताकि यह पूरा पेज ले सके */
 .container {
     flex: 1;
     display: flex;
     flex-direction: row;
 }
 
-/* मुख्य कंटेंट को स्क्रॉल करने योग्य बनाएँ */
 main {
     flex: 1;
     padding: 10px;
-    overflow-y: auto; /* स्क्रॉल करने के लिए */
+    overflow-y: auto; 
 }
 
-/* ✅ Footer अब हमेशा पूरे पेज के अंत में ही रहेगा ✅ */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
-    margin-top: auto; /* Footer को आखिरी में धकेलने के लिए */
-    position: relative; /* कोई fixed नहीं! */
+    margin-top: auto; 
+    position: relative;
 }
